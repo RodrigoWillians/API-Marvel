@@ -1,0 +1,29 @@
+
+.character-image-container {
+  width: 100%; /* Largura desejada para os contêineres de imagem */
+  height: 400px; /* Altura desejada para os contêineres de imagem */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Cortará as imagens maiores para caber no contêiner */
+}
+
+.character-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção e preenche o espaço disponível */
+}
+
+
+.character-button {
+  width: 100%; /* O botão ocupa 100% da largura do contêiner da imagem */
+  height: 100%; /* O botão ocupa 100% da altura do contêiner da imagem */
+}
+
+.character-card-rotate {
+  transition: transform 0.5s ease;
+}
+
+.character-card-rotate.flipped {
+  transform: rotateY(180deg);
+}

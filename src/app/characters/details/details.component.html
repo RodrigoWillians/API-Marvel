@@ -1,0 +1,14 @@
+<!-- details.component.html -->
+
+<div class="details-container" [class.show-details]="showDetailsFlag">
+  <div class="character-details">
+    <div class="character-image">
+      <img [src]="selectedCharacter.thumbnail.path + '.' + selectedCharacter.thumbnail.extension" alt="{{selectedCharacter.name}}">
+    </div>
+    <div class="character-info">
+      <h2>{{ selectedCharacter.name }}</h2>
+      <p>{{ selectedCharacter.description || 'Sem descrição disponível.' }}</p>
+    </div>
+  </div>
+  <button mat-button (click)="toggleDetails()">Fechar Detalhes</button>
+</div>
