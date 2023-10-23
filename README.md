@@ -1,27 +1,42 @@
-# DesafioField
+# Descrição
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+Implementação de API da Marvel.
 
-## Development server
+Objetivo: mostrar o nome e imagens de alguns personagens da Marvel utilizando a API [Marvel](https://developer.marvel.com/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+• Projeto utilizando paginação via API. E redirecionamento para a pagina de quadrinhos do respectivo personagem escolhido.
 
-## Code scaffolding
+## Configuração
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O Projeto foi feito utilizando:
 
-## Build
+• IDE: Visual Studio Code.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+• Framework utilizado: Angular.
 
-## Running unit tests
+• Versão: 16.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+• Utilizado Angular Material.
 
-## Running end-to-end tests
+• Testes feitos via [Karma](https://karma-runner.github.io).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Instalação do projeto na máquina
 
-## Further help
+Para abrir o projeto, basta clonar o repositório ou realizar o download. Em seguida: 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+• Importar o projeto na IDE desejada.
+
+• Possuir Angular CLI instalado. Comando para instalar: npm install -g @angular/cli
+
+• Executar o comando no terminal: npm install.
+
+• No arquivo src/environment.ts verificar as Urls.
+
+• Instalar o node modules: npm install.
+
+• Executar o projeto: ng serve.
+
+## Rodar o prijeto
+
+NG SERVE
+Quando o projeto estiver disponível, a aplicação estará acessível pelo endereço: http://localhost:4200/
