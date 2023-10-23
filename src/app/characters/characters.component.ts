@@ -1,7 +1,7 @@
-import { CharactersApiService } from '../service/characters-api.service';
+
+import { CharactersApiService } from 'src/app/service/characters-api.service';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,8 +11,7 @@ import { Router } from '@angular/router';
 })
 export class CharactersComponent implements OnInit {
   constructor(
-    private characterSvc: CharactersApiService,
-    private router: Router) { }
+    private characterSvc: CharactersApiService) {}
 
   allCharacters: Observable<any> | undefined;
   currentPage: number = 1;
@@ -27,8 +26,7 @@ export class CharactersComponent implements OnInit {
   getCharacters() {
     this.allCharacters = this.characterSvc.getCharacters(this.currentPage, this.itemsPerPage);
 
-    // Obtenha o número total de personagens da Marvel aqui
-    this.totalCharacters = 100; // Substitua pelo número real
+    this.totalCharacters = 100;
     this.calculateTotalPages();
   }
 
@@ -65,8 +63,4 @@ export class CharactersComponent implements OnInit {
     }
   }
 
-  showDetails(characterId: number) {
-    this.router.navigate(['/character', characterId]);
-  }
 }
-

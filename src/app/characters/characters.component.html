@@ -1,4 +1,3 @@
-
 <div fxFlex fxLayout="column">
   <div fxLayout="row wrap">
     <div fxFlex="25" fxFlex.md="33" fxFle.sm="50" fxFlex.xs="100" fxLayout="column" *ngFor="let character of allCharacters | async" style="padding:5px">
@@ -6,7 +5,7 @@
         <div class="character-image-container">
           <img class="character-image" [src]="character.thumbnail.path + '.' + character.thumbnail.extension" alt="{{character.name}}">
         </div>
-        <mat-card-title>
+        <mat-card-title class="center-text">
           {{ character.name }}
         </mat-card-title>
         <mat-card-footer>
@@ -16,20 +15,16 @@
     </div>
   </div>
 
-  <!-- Exibição da página atual -->
   <div fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
     <p>Página {{ currentPage }} de {{ totalPages }}</p>
   </div>
 
-  <!-- Botões de próxima página e página anterior -->
   <div fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
     <button mat-button (click)="prevPage()" [disabled]="currentPage === 1">Página Anterior</button>
     <button mat-button (click)="nextPage()" [disabled]="currentPage === totalPages">Próxima Página</button>
   </div>
 
-  <!-- Lista de números de página -->
   <div fxFlex="100" fxLayout="row" fxLayoutAlign="center center">
     <button mat-button *ngFor="let page of getPageArray()" (click)="goToPage(page)">{{ page }}</button>
   </div>
 </div>
-

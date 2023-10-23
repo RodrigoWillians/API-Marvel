@@ -1,23 +1,22 @@
 
 .character-image-container {
-  width: 100%; /* Largura desejada para os contêineres de imagem */
-  height: 400px; /* Altura desejada para os contêineres de imagem */
+  width: 100%;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Cortará as imagens maiores para caber no contêiner */
+  overflow: hidden;
 }
 
 .character-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Mantém a proporção e preenche o espaço disponível */
+  object-fit: cover;
 }
 
-
 .character-button {
-  width: 100%; /* O botão ocupa 100% da largura do contêiner da imagem */
-  height: 100%; /* O botão ocupa 100% da altura do contêiner da imagem */
+  width: 100%;
+  height: 100%;
 }
 
 .character-card-rotate {
@@ -26,4 +25,11 @@
 
 .character-card-rotate.flipped {
   transform: rotateY(180deg);
+}
+
+.center-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
