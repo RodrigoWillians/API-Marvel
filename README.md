@@ -32,11 +32,9 @@ Para abrir o projeto, basta clonar o repositório ou realizar o download. Em seg
 
 • No arquivo src/environment.ts verificar as Urls.
 
-• Instalar o node modules: npm install.
-
 • Executar o projeto: ng serve.
 
-## Rodar o prijeto
+## Rodar o projeto
 
 NG SERVE
 Quando o projeto estiver disponível, a aplicação estará acessível pelo endereço: http://localhost:4200/
