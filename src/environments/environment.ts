@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  publicKey: 'b48b3dfd10e0f7c04cf760a4726fa918',
-  hash: '17012d39ccda483acac7e779d57b59b8',
+  publicKey: 'c839d9ff90dd372f67ccef359b52cdc4',
+  privateKey: '684253429df822622f80c0ce0ab9c02c97ef7f55'
 };

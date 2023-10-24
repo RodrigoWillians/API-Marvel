@@ -62,5 +62,4 @@ export class CharactersComponent implements OnInit {
       this.getCharacters();
     }
   }
-
 }
