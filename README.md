@@ -6,6 +6,9 @@ Objetivo: mostrar o nome e imagens de alguns personagens da Marvel utilizando a 
 
 • Projeto utilizando paginação via API. E redirecionamento para a pagina de quadrinhos do respectivo personagem escolhido.
 
+• Variavel de ambiente utilizada para pegar as keys necessárias para fazer o hash, fiz um metodo no service para gerar esse Hash, o certo era as variaveis de ambiente não serem comitadas junto, seguindo as medidas de segurança
+porém estou comitando junto para avaliação completa do código.
+
 ## Configuração
 
 O Projeto foi feito utilizando:
